@@ -225,3 +225,38 @@
         margin-left: 0; /* Menghapus margin kiri di mode mobile */
     }
 }
+
+/* SUBMENU SIDEBAR */
+.submenu {
+    display: none;
+    position: absolute;
+    left: 125px; /* Sejajar dengan sidebar */
+    top: 0;
+    width: 200px;
+    background-color: #ececec;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateX(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.submenu.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Warna teks submenu hitam */
+.submenu a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 8px 10px;
+}
+
+/* Efek hover */
+.submenu a:hover {
+    background-color: #ddd;
+}
