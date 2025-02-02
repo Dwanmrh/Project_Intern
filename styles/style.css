@@ -114,7 +114,7 @@
 }
 
 .card-img-top {
-    height: 200px; /* Tinggi gambar card */
+    height: 400px; /* Tinggi gambar card */
     object-fit: cover; /* Memastikan gambar menutupi area card */
     border-bottom: 1px solid #ddd; /* Garis tepi bawah gambar */
 }
