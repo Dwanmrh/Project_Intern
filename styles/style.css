@@ -1,0 +1,227 @@
+/* NAVBAR */
+.custom-navbar {
+    background-color: #2c3e50 !important; /* Warna latar belakang navbar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek shadow */
+    padding: 10px 0; /* Padding atas dan bawah untuk navbar */
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ecf0f1 !important; /* Warna teks brand */
+    margin-right: 30px; /* Jarak antara brand dan menu */
+}
+
+.navbar-brand:hover {
+    color: #bdc3c7 !important; /* Warna teks brand saat dihover */
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    color: #ecf0f1 !important; /* Warna teks menu */
+    margin-left: 20px; /* Jarak antar menu */
+    padding: 8px 15px; /* Padding untuk tombol menu */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Animasi hover */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #3498db !important; /* Warna teks menu saat dihover */
+    background-color: rgba(255, 255, 255, 0.1); /* Latar belakang saat dihover */
+    border-radius: 5px; /* Membuat sudut tombol lebih lembut */
+}
+
+.navbar-nav .nav-link.active {
+    color: #3498db !important; /* Warna teks menu aktif */
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1); /* Latar belakang untuk menu aktif */
+    border-radius: 5px; /* Membuat sudut tombol lebih lembut */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        margin-left: 0;
+        text-align: center;
+        padding: 10px 0; /* Spasi antar menu di mode mobile */
+    }
+
+    .navbar-nav {
+        background-color: #34495e; /* Warna latar belakang menu di mode mobile */
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .navbar-brand {
+        margin-right: 0; /* Menghapus margin kanan di mode mobile */
+    }
+}
+
+/* CAROUSEL */
+#carouselExampleInterval {
+    max-width: 1300px; /* Lebar maksimum carousel */
+    margin: 0 auto; /* Pusatkan carousel */
+    border-radius: 10px; /* Membuat sudut carousel lebih lembut */
+    overflow: hidden; /* Memastikan gambar tidak keluar dari batas carousel */
+}
+
+.carousel-inner {
+    max-height: 500px; /* Tinggi maksimum carousel */
+}
+
+.carousel-item img {
+    width: 100%; /* Gambar mengisi lebar carousel */
+    height: auto; /* Menjaga aspek rasio gambar */
+    object-fit: cover; /* Memastikan gambar menutupi area carousel */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%; /* Lebar tombol navigasi */
+    border-radius: 5px; /* Membuat sudut tombol navigasi lebih lembut */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(1); /* Mengubah warna ikon menjadi putih */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #carouselExampleInterval {
+        max-width: 100%; /* Lebar maksimum carousel di mode mobile */
+    }
+
+    .carousel-inner {
+        max-height: 300px; /* Tinggi maksimum carousel di mode mobile */
+    }
+}
+
+/* CARD GROUP */
+.row-cols-md-3 {
+    margin: 20px auto; /* Memberikan margin atas dan bawah, serta memusatkan card group */
+    max-width: 1200px; /* Lebar maksimum card group */
+    padding: 0 15px; /* Padding untuk responsif */
+}
+
+.card {
+    border: 1px solid #ddd; /* Garis tepi card */
+    border-radius: 10px; /* Membuat sudut card lebih lembut */
+    overflow: hidden; /* Memastikan konten tidak keluar dari batas card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efek naik saat dihover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Efek shadow saat dihover */
+}
+
+.card-img-top {
+    height: 200px; /* Tinggi gambar card */
+    object-fit: cover; /* Memastikan gambar menutupi area card */
+    border-bottom: 1px solid #ddd; /* Garis tepi bawah gambar */
+}
+
+.card-body {
+    padding: 20px; /* Padding untuk konten di dalam card */
+}
+
+.card-title {
+    font-size: 20px; /* Ukuran font judul card */
+    font-weight: bold; /* Tebal font judul card */
+    margin-bottom: 10px; /* Jarak antara judul dan teks */
+    color: #2c3e50; /* Warna teks judul */
+}
+
+.card-text {
+    font-size: 14px; /* Ukuran font teks card */
+    color: #555; /* Warna teks card */
+    line-height: 1.6; /* Jarak antar baris */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .row-cols-md-3 {
+        max-width: 100%; /* Lebar maksimum card group di mode mobile */
+    }
+
+    .card-img-top {
+        height: 150px; /* Tinggi gambar card di mode mobile */
+    }
+
+    .card-title {
+        font-size: 18px; /* Ukuran font judul card di mode mobile */
+    }
+
+    .card-text {
+        font-size: 13px; /* Ukuran font teks card di mode mobile */
+    }
+}
+
+/* SIDEBAR */
+.sidebar {
+    height: 100%; /* Tinggi sidebar mengisi seluruh layar */
+    width: 125px; /* Lebar sidebar */
+    position: fixed; /* Posisi tetap di sisi kiri */
+    top: 1; /* Mulai dari bagian atas */
+    left: 0; /* Mulai dari sisi kiri */
+    background-color: #343a40; /* Warna latar belakang sidebar */
+    padding-top: 20px; /* Padding atas untuk memberi jarak dari atas */
+    z-index: 1000; /* Memastikan sidebar berada di atas konten lain */
+}
+
+.sidebar a {
+    padding: 10px 15px; /* Padding untuk setiap link */
+    text-decoration: none; /* Menghilangkan underline pada link */
+    font-size: 18px; /* Ukuran font link */
+    color: white; /* Warna teks link */
+    display: block; /* Membuat link menjadi blok untuk mengisi lebar sidebar */
+    transition: background-color 0.3s ease; /* Animasi hover */
+    text-align: center; /* Pusatkan konten di dalam link */
+}
+
+.sidebar a:hover {
+    background-color: #575d63; /* Warna latar belakang saat dihover */
+}
+
+.sidebar a.active {
+    background-color: #3498db; /* Warna latar belakang untuk link aktif */
+    color: white; /* Warna teks untuk link aktif */
+    font-weight: bold; /* Tebal font untuk link aktif */
+}
+
+.icon-wrapper {
+    display: flex;
+    flex-direction: column; /* Mengatur ikon dan teks secara vertikal */
+    align-items: center; /* Pusatkan ikon dan teks secara horizontal */
+}
+
+.icon-wrapper i {
+    font-size: 24px; /* Ukuran ikon */
+    margin-bottom: 5px; /* Jarak antara ikon dan teks */
+}
+
+.icon-wrapper span {
+    font-size: 14px; /* Ukuran teks */
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 150px; /* Memberikan margin kiri agar konten tidak tertutup sidebar */
+    padding: 20px; /* Padding untuk konten utama */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Lebar sidebar mengisi layar di mode mobile */
+        height: auto; /* Tinggi sidebar menyesuaikan konten */
+        position: relative; /* Posisi relatif di mode mobile */
+    }
+
+    .sidebar a {
+        text-align: center; /* Pusatkan teks link di mode mobile */
+        padding: 15px; /* Padding lebih besar untuk mobile */
+    }
+
+    .main-content {
+        margin-left: 0; /* Menghapus margin kiri di mode mobile */
+    }
+}
