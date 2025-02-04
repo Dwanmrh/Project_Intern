@@ -97,7 +97,7 @@
 /* CARD GROUP */
 .row-cols-md-3 {
     margin: 20px auto; /* Memberikan margin atas dan bawah, serta memusatkan card group */
-    max-width: 1200px; /* Lebar maksimum card group */
+    max-width: 1700px; /* Lebar maksimum card group */
     padding: 0 15px; /* Padding untuk responsif */
 }
 
@@ -114,7 +114,7 @@
 }
 
 .card-img-top {
-    height: 400px; /* Tinggi gambar card */
+    height: 425px; /* Tinggi gambar card */
     object-fit: cover; /* Memastikan gambar menutupi area card */
     border-bottom: 1px solid #ddd; /* Garis tepi bawah gambar */
 }
