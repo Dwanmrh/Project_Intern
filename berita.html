@@ -12,135 +12,103 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg custom-navbar">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-            <img
-              src="assets/images/LOGO_SECAPA.png"
-              alt="Logo"
-              width="50"
-              height="45"
-              class="d-inline-block align-text-top"
-            />
-            SETUKPA LEMDIKLAT POLRI
-          </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/LOGO_SECAPA.png" alt="Logo" width="50" height="45" class="d-inline-block align-text-top" />
+        SETUKPA LEMDIKLAT POLRI
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profil.html">PROFIL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">BERITA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="informasi.html">INFORMASI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeri.html">GALERI</a>
+          </li>
+          <!-- Dropdown Medsos -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMediaSosial"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              MEDIA SOSIAL
+            </a>
+            <ul
+              class="dropdown-menu"
+              aria-labelledby="navbarDropdownMediaSosial"
+            >
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="https://www.instagram.com/lemdiklatpolri.id/"
+                  target="_blank"
+                  >Instagram Lemdiklat</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="https://www.instagram.com/humas_setukpa/"
+                  target="_blank"
+                  >Instagram Setukpa</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- Dropdown Kontak -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownKontak"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              KONTAK
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownKontak">
+              <li>
+                <a class="dropdown-item" href="https://www.instagram.com/humas_setukpa/" target=""
+                  >Instagram Setukpa</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- Dropdown Link -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              LINK
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownLink">
+              <li><a class="dropdown-item" href="https://lemdiklat.polri.go.id/" target="_blank">Lemdiklat Polri</a></li>
+              <li><a class="dropdown-item" href="https://lemdiklat.polri.go.id/web/" target="_blank">Lemdiklat Polri Web</a></li>
+            </ul>
             <li class="nav-item">
-              <a class="nav-link" href="index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="profil.html">PROFIL</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">BERITA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="informasi.html">INFORMASI</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="galeri.html">GALERI</a>
-            </li>
-            <!-- Dropdown Media Sosial -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMediaSosial"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                MEDIA SOSIAL
-              </a>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMediaSosial"
-              >
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="https://instagram.com"
-                    target="_blank"
-                    >Instagram</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="https://facebook.com"
-                    target="_blank"
-                    >Facebook</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <!-- Dropdown Kontak -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownKontak"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                KONTAK
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownKontak">
-                <li>
-                  <a class="dropdown-item" href="" target=""
-                    >Whatsapp 081220220134</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <!-- Dropdown Link -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                LINK
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownLink">
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="https://lemdiklat.polri.go.id/"
-                    target="_blank"
-                    >Lemdiklat Polri</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="https://lemdiklat.polri.go.id/web/"
-                    target="_blank"
-                    >Lemdiklat Polri Web</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+            <a class="nav-link" href="sipls.html">SIPLS</a>
+          </li>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
     <!-- CARD GROUP -->
     <div class="row row-cols-1 row-cols-md-3 g-4">
