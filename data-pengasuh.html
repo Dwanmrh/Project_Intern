@@ -221,9 +221,22 @@
     <!-- CONTENT -->
     <div class="container mt-5 main-content">
       <h1>Data Pengasuh</h1>
-      <p>
-        Berikut adalah Data Pengasuh pendidikan siswa SETUKPA LEMDIKLAT POLRI.
-      </p>
+
+      <!-- Tombol Upload -->
+      <div class="mb-3">
+        <label for="uploadExcel" class="form-label"
+          >Upload Data Pengasuh (Format Excel)</label
+        >
+        <input
+          class="form-control"
+          type="file"
+          id="uploadExcel"
+          accept=".xlsx, .xls"
+        />
+        <button class="btn btn-primary mt-2" onclick="uploadData()">
+          Upload
+        </button>
+      </div>
 
       <!-- Tabel Nilai Akhir Pendidikan -->
       <table class="table table-bordered table-striped">
@@ -251,7 +264,7 @@
           <tr>
             <td><img src="/assets/images/pengasuh.png" alt="" /></td>
             <td>2</td>
-            <td>RIDWAN HIDAYATULLAH</td>
+            <td>MUHAMMAD</td>
             <td>IPTU</td>
             <td>202503030002</td>
             <td>TIM IT</td>
@@ -260,7 +273,7 @@
           <tr>
             <td><img src="/assets/images/pengasuh.png" alt="" /></td>
             <td>3</td>
-            <td>RENDY MAULANA</td>
+            <td>BAKTI</td>
             <td>IPDA</td>
             <td>202503030001</td>
             <td>TIM IT</td>
@@ -280,6 +293,27 @@
           var submenu = document.getElementById("na-submenu");
           submenu.classList.toggle("active");
         });
+    </script>
+    <script>
+      function uploadData() {
+        const fileInput = document.getElementById("uploadExcel");
+        const file = fileInput.files[0];
+
+        if (file) {
+          // Validasi format file
+          if (file.name.endsWith(".xlsx") || file.name.endsWith(".xls")) {
+            // Proses upload file (Anda bisa menambahkan logika upload ke server di sini)
+            console.log("File yang diupload:", file.name);
+            alert("File berhasil diupload: " + file.name);
+          } else {
+            alert(
+              "Format file tidak valid. Harap unggah file Excel (.xlsx atau .xls)."
+            );
+          }
+        } else {
+          alert("Harap pilih file terlebih dahulu.");
+        }
+      }
     </script>
   </body>
 </html>
