@@ -173,7 +173,7 @@
         <a href="kartul.html"> NILAI KARTUL</a>
         <a href="latnis.html"> NILAI LATNIS</a>
       </div>
-      <a href="nmk.html">
+      <a href="nmk.html" id="nmk-link">
         <div class="icon-wrapper">
           <i class="fas fa-calculator"></i>
           <span>Nilai</span>
@@ -181,6 +181,7 @@
         </div>
       </a>
       <div id="nmk-submenu" class="submenu">
+        <a href="nmk.html">NILAI MENTAL</a>
         <a href="nimat.html">NIMAT</a>
         <a href="niman.html">NIMAN</a>
         <a href="nisos.html">NISOS</a>
@@ -220,18 +221,18 @@
     </div>
 
     <!-- CONTENT -->
-    <div class="container mt-5 main-content">
-      <h1>Nilai Gladi Wirottama (NGW)</h1>
+    <div class="container mt-4 main-content">
+      <h1 class="text-center mb-3">Nilai Gladi Wirottama (NGW)</h1>
 
       <!-- Tombol Upload -->
-      <div class="mb-3">
+      <div class="mb-3 d-flex">
         <input
-          class="form-control"
+          class="form-control me-2"
           type="file"
           id="uploadExcel"
           accept=".xlsx, .xls"
         />
-        <button class="btn btn-primary mt-2" onclick="uploadData()">
+        <button class="btn btn-primary me-2" onclick="uploadData()">
           Upload
         </button>
       </div>
@@ -297,6 +298,15 @@
         .addEventListener("click", function (event) {
           event.preventDefault();
           var submenu = document.getElementById("na-submenu");
+          submenu.classList.toggle("active");
+        });
+    </script>
+    <script>
+      document
+        .getElementById("nmk-link")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          var submenu = document.getElementById("nmk-submenu");
           submenu.classList.toggle("active");
         });
     </script>

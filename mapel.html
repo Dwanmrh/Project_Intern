@@ -173,7 +173,7 @@
         <a href="kartul.html"> NILAI KARTUL</a>
         <a href="latnis.html"> NILAI LATNIS</a>
       </div>
-      <a href="nmk.html">
+      <a href="nmk.html" id="nmk-link">
         <div class="icon-wrapper">
           <i class="fas fa-calculator"></i>
           <span>Nilai</span>
@@ -181,6 +181,7 @@
         </div>
       </a>
       <div id="nmk-submenu" class="submenu">
+        <a href="nmk.html">NILAI MENTAL</a>
         <a href="nimat.html">NIMAT</a>
         <a href="niman.html">NIMAN</a>
         <a href="nisos.html">NISOS</a>
@@ -220,18 +221,85 @@
     </div>
 
     <!-- CONTENT -->
-    <div class="container mt-5 main-content">
-      <h1>Nilai Mapel (NMP)</h1>
+    <div class="container mt-4 main-content">
+      <h1 class="text-center mb-3">Nilai Mapel (NMP)</h1>
 
-      <!-- Tombol Upload -->
-      <div class="mb-3">
+      <!-- Tombol Upload & Dropdown -->
+      <div class="mb-3 d-flex">
+        <!-- Dropdown Tahun -->
+        <select class="form-select-color me-1" aria-label="Default select example">
+          <option selected>Pilih Tahun</option>
+          <option value="1">2024</option>
+          <option value="2">2025</option>
+          <option value="4">2026</option>
+          <option value="5">2027</option>
+        </select>
+        <!-- Prodiklat -->
+        <select class="form-select-color me-1" aria-label="Default select example">
+          <option selected>Pilih Prodiklat</option>
+          <option value="1">SIP 54-1</option>
+          <option value="2">SIP 54-2</option>
+          <option value="3">PAG</option>
+        </select>
+        <!-- Mapel -->
+        <select class="form-select-color me-1" aria-label="Default select example">
+          <option selected>Pilih Mapel</option>
+          <option value="1">Mapel 1</option>
+          <option value="2">Mapel 2</option>
+          <option value="3">Mapel 3</option>
+          <option value="4">Mapel 4</option>
+          <option value="5">Mapel 5</option>
+          <option value="6">Mapel 6</option>
+          <option value="7">Mapel 7</option>
+          <option value="8">Mapel 8</option>
+          <option value="9">Mapel 9</option>
+          <option value="10">Mapel 10</option>
+          <option value="11">Mapel 11</option>
+          <option value="12">Mapel 12</option>
+          <option value="13">Mapel 13</option>
+          <option value="14">Mapel 14</option>
+          <option value="15">Mapel 15</option>
+          <option value="16">Mapel 16</option>
+          <option value="17">Mapel 17</option>
+          <option value="18">Mapel 18</option>
+          <option value="19">Mapel 19</option>
+          <option value="20">Mapel 20</option>
+          <option value="21">Mapel 21</option>
+          <option value="22">Mapel 22</option>
+          <option value="23">Mapel 23</option>
+          <option value="24">Mapel 24</option>
+          <option value="25">Mapel 25</option>
+          <option value="26">Mapel 26</option>
+          <option value="27">Mapel 27</option>
+          <option value="28">Mapel 28</option>
+          <option value="29">Mapel 29</option>
+          <option value="30">Mapel 30</option>
+          <option value="31">Mapel 31</option>
+          <option value="32">Mapel 32</option>
+          <option value="33">Mapel 33</option>
+          <option value="34">Mapel 34</option>
+          <option value="35">Mapel 35</option>
+          <option value="36">Mapel 36</option>
+          <option value="37">Mapel 37</option>
+          <option value="38">Mapel 38</option>
+          <option value="39">Mapel 39</option>
+          <option value="40">Mapel 40</option>
+          <option value="41">Mapel 41</option>
+          <option value="42">Mapel 42</option>
+          <option value="43">Mapel 43</option>
+          <option value="44">Mapel 44</option>
+          <option value="45">Mapel 45</option>
+        </select>
+        <form class="d-flex me-2" role="search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
         <input
-          class="form-control"
+          class="form-control me-2"
           type="file"
           id="uploadExcel"
           accept=".xlsx, .xls"
         />
-        <button class="btn btn-primary mt-2" onclick="uploadData()">
+        <button class="btn btn-primary me-2" onclick="uploadData()">
           Upload
         </button>
       </div>
@@ -289,6 +357,15 @@
         .addEventListener("click", function (event) {
           event.preventDefault();
           var submenu = document.getElementById("na-submenu");
+          submenu.classList.toggle("active");
+        });
+    </script>
+    <script>
+      document
+        .getElementById("nmk-link")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          var submenu = document.getElementById("nmk-submenu");
           submenu.classList.toggle("active");
         });
     </script>

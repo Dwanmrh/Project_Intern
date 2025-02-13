@@ -153,7 +153,7 @@
       <a href="kartul.html"> NILAI KARTUL</a>
       <a href="latnis.html"> NILAI LATNIS</a>
     </div>
-    <a href="nmk.html">
+    <a href="nmk.html" id="nmk-link">
       <div class="icon-wrapper">
         <i class="fas fa-calculator"></i>
         <span>Nilai</span>
@@ -161,6 +161,7 @@
       </div>
     </a>
     <div id="nmk-submenu" class="submenu">
+        <a href="nmk.html">NILAI MENTAL</a>
         <a href="nimat.html">NIMAT</a>
         <a href="niman.html">NIMAN</a>
         <a href="nisos.html">NISOS</a>
@@ -255,6 +256,13 @@
     document.getElementById('na-link').addEventListener('click', function(event) {
     event.preventDefault();
     var submenu = document.getElementById('na-submenu');
+    submenu.classList.toggle('active');
+});
+  </script>
+  <script>
+    document.getElementById('nmk-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    var submenu = document.getElementById('nmk-submenu');
     submenu.classList.toggle('active');
 });
   </script>
